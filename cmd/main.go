@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/siangyeh8818/golang.exporter.templeate/internal/"
+	export "github.com/siangyeh8818/golang.exporter.templeate/internal"
 )
 
 func main() {
@@ -19,5 +19,5 @@ func main() {
 		nats_port_env = "8222"
 	}
 	log.Printf("NATS_PORT : %s \n", nats_port_env)
-	Run_Exporter_Server()
+	export.Run_Exporter_Server()
 }

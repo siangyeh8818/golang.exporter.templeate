@@ -3,7 +3,7 @@ package exporter
 import (
 	"log"
 	"net/http"
-	"os"
+	//"os"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
@@ -64,8 +64,8 @@ func NewExporter(metricsPrefix string) *Exporter {
 			[]string{"myLabel"})
 	*/
 	return &Exporter{
-		gauge_metrics1: nats_total_msgs,
-		gauge_metrics2:  nats_subscriptions_last_sent,
+		gauge_metrics1: gauge_metrics1,
+		gauge_metrics2:  gauge_metrics2,
 		//gaugeVec: gaugeVec,
 	}
 }
