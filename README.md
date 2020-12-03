@@ -35,3 +35,8 @@ https://github.com/siangyeh8818/golang.exporter.alibabacloud
 #golang.exporter.tencentcloud
 
 https://github.com/siangyeh8818/golang.exporter.tencentcloud
+
+### How to build
+```
+skaffold build
+```
